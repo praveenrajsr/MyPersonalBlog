@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>En Karuthugal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/newBoot.css"/>
+    <link rel="stylesheet" href="css/framework.css"/>
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="top">
+      <a href="/"><h2 class="heading1">Welcome to my Blog!</h2></a>
+        <!--Strectchable nav!-->
+        <nav class="cd-stretchy-nav">
+          <a class="cd-nav-trigger" href="#0">
+            Menu <span aria-hidden="true"></span>
+          </a>
+          <ul>
+            <li><a href="/"><span>Home</span></a></li>
+      			<li><a href="/list"><span>Articles</span></a></li>
+      			<li><a href="/video"><span>Videos</span></a></li>
+      			<li><a href="#0"><span>As I'm</span></a></li>
+      			<li><a href="#0"><span>Contact</span></a></li>
+          </ul>
+          <span aria-hidden="true" class="stretchy-nav-bg"></span>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="mainArticle">
+        <form action="/save" method="post" enctype="multipart/form-data">
+          <input type="text" class="w3-input" placeholder="Enter a Title" name="title" required><br><br>
+          <h2 class="heading2">Enter the Content</h2><br><br>
+          <textarea class="w3-input" type="textarea" name="content" rows="19" cols="20" placeholder="Write something" required></textarea><br>
+          <input type="submit" class="w3-btn w3-blue" style="float: right;">
+      </div>
+        <div class="sidepane">
+          <h2 class="heading2">Enter a photo</h2><br>
+          <input class="w3-btn" type="file" name="image" value="newdata" required>
+        </form>
+      </div>
+    </div>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+  </body>
+</html>
